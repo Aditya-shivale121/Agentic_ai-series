@@ -5,6 +5,7 @@ requires-python = ">=3.12"
 [manifest]
 members = [
     "day-1",
+    "day-2",
     "week-1",
 ]
 
@@ -43,6 +44,21 @@ wheels = [
 name = "day-1"
 version = "0.1.0"
 source = { editable = "day_1" }
+dependencies = [
+    { name = "groq" },
+    { name = "python-dotenv" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "groq", specifier = ">=1.7.0" },
+    { name = "python-dotenv", specifier = ">=1.2.4" },
+]
+
+[[package]]
+name = "day-2"
+version = "0.1.0"
+source = { editable = "day_2" }
 dependencies = [
     { name = "groq" },
     { name = "python-dotenv" },
