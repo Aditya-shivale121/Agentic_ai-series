@@ -7,6 +7,7 @@ members = [
     "day-1",
     "day-2",
     "day-3",
+    "day-4",
     "week-1",
 ]
 
@@ -89,12 +90,44 @@ requires-dist = [
 ]
 
 [[package]]
+name = "day-4"
+version = "0.1.0"
+source = { editable = "day_4" }
+dependencies = [
+    { name = "dotenv" },
+    { name = "groq" },
+    { name = "loadenv" },
+    { name = "pydantic" },
+    { name = "python-dotenv" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "dotenv", specifier = ">=0.9.9" },
+    { name = "groq", specifier = ">=1.7.0" },
+    { name = "loadenv", specifier = ">=0.1.1" },
+    { name = "pydantic", specifier = ">=2.14.1" },
+    { name = "python-dotenv", specifier = ">=1.2.4" },
+]
+
+[[package]]
 name = "distro"
 version = "1.9.0"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/fc/f8/98eea607f65de6527f8a2e8885fc8015d3e6f5775df186e443e0964a11c3/distro-1.9.0.tar.gz", hash = "sha256:2fa77c6fd8940f116ee1d6b94a2f90b13b5ea8d019b98bc8bafdcabcdd9bdbed", size = 60722, upload-time = "2023-12-24T09:54:32.31Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/12/b3/231ffd4ab1fc9d679809f356cebee130ac7daa00d6d6f3206dd4fd137e9e/distro-1.9.0-py3-none-any.whl", hash = "sha256:7bffd925d65168f85027d8da9af6bddab658135b840670a223589bc0c8ef02b2", size = 20277, upload-time = "2023-12-24T09:54:30.421Z" },
+]
+
+[[package]]
+name = "dotenv"
+version = "0.9.9"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "python-dotenv" },
+]
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b2/b7/545d2c10c1fc15e48653c91efde329a790f2eecfbbf2bd16003b5db2bab0/dotenv-0.9.9-py2.py3-none-any.whl", hash = "sha256:29cf74a087b31dafdb5a446b6d7e11cbce8ed2741540e2339c69fbef92c94ce9", size = 1892, upload-time = "2025-02-19T22:15:01.647Z" },
 ]
 
 [[package]]
@@ -158,6 +191,15 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/f5/08/8eea9d4b8302028f3abb2c0813953f7aec26d33b7a8960ed760e65ff29fa/idna-3.20.tar.gz", hash = "sha256:a7db850025b95ded1eae8a46181a1a6c56c92c96f0e2b005d9ff8dc0210cab44", size = 216463, upload-time = "2026-09-17T14:11:04.752Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/58/a2/bb081bab032533a855d44de1d56f8e8426114ff1ba5d1f07a438a0a654f8/idna-3.20-py3-none-any.whl", hash = "sha256:ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c", size = 69583, upload-time = "2026-09-17T14:11:03.168Z" },
+]
+
+[[package]]
+name = "loadenv"
+version = "0.1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d7/a2/4ef0013d1683cdcd29ea254e3a02ac43f25323842fc8d59983eb17608f47/loadenv-0.1.1.tar.gz", hash = "sha256:8dde4a80cf733323880c118659685d822f9d1311fa15b3d7e1e2aa28223aba29", size = 7456, upload-time = "2021-09-22T22:19:41.369Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d0/ba/e29b2a5d12d5fad9c037ad7d5c3dffb22864d6511310bffa414c56408995/loadenv-0.1.1-py3-none-any.whl", hash = "sha256:e06a1d86ea1ad89a96aeb470d27de8d569a980ad7c6fd0dd0ee416cc11919853", size = 6899, upload-time = "2021-09-22T22:19:32.26Z" },
 ]
 
 [[package]]
