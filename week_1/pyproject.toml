@@ -24,4 +24,5 @@ members = [
     "day_3/venv",
     "day_3/tokenization.py",
     "day_4",
+    "day5_project",
 ]
