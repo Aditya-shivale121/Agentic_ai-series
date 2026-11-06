@@ -10,6 +10,7 @@ resolution-markers = [
 members = [
     "day-1",
     "day-2",
+    "day3-prompt-chaining",
     "week-2",
 ]
 
@@ -190,6 +191,23 @@ requires-dist = [
 name = "day-2"
 version = "0.1.0"
 source = { editable = "day_2" }
+dependencies = [
+    { name = "grok" },
+    { name = "groq" },
+    { name = "python-dotenv" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "grok", specifier = ">=6.2" },
+    { name = "groq", specifier = ">=1.7.0" },
+    { name = "python-dotenv", specifier = ">=1.2.4" },
+]
+
+[[package]]
+name = "day3-prompt-chaining"
+version = "0.1.0"
+source = { editable = "day3_prompt_chaining" }
 dependencies = [
     { name = "grok" },
     { name = "groq" },
