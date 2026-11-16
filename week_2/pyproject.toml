@@ -21,4 +21,5 @@ members = [
     "day_1",
     "day_2",
     "day3_prompt_chaining",
+    "day4_streaming",
 ]
